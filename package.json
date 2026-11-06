@@ -1,0 +1,9 @@
+{
+  "name": "focus-browser",
+  "productName": "Focus",
+  "version": "0.1.0",
+  "description": "A focused Chromium desktop browser with unpacked extension support.",
+  "main": "electron/main.js",
+  "scripts": { "start": "electron .", "dist": "electron-builder --win nsis portable" },
+  "devDependencies": { "electron": "^38.0.0", "electron-builder": "^26.0.0" }
+}
