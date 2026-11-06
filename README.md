@@ -6,6 +6,8 @@ Focus is a lightweight Windows Chromium browser with a Chrome-inspired interface
 
 Focus loads **unpacked Chromium extensions** through Electron's persistent `session.extensions.loadExtension` API, remembers their paths across launches, lists installed extensions, and removes them. Electron officially supports a subset of Chrome APIs including runtime, scripting, storage, tabs, webRequest, and DevTools APIs. It does not promise arbitrary Chrome Web Store compatibility or packed `.crx` installation; unsupported extension APIs fail honestly instead of being simulated.
 
+The Extensions panel includes a direct Chrome Web Store link. This provides Web Store discovery, while installation still requires an unpacked extension directory. Full one-click arbitrary Web Store installation is not an Electron capability; implementing that would require a custom Chromium integration or using the Chrome browser itself.
+
 ## Current app
 
 The Electron track includes multiple tabs, address/search navigation, back/forward/reload, downloads to the Windows Downloads folder, persistent Chromium session data, and an Extensions panel. The earlier PySide6/QtWebEngine prototype remains in the repository as a reference for the Qt implementation and data layer.
