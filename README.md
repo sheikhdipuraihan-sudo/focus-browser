@@ -8,6 +8,10 @@ Focus loads **unpacked Chromium extensions** through Electron's persistent `sess
 
 The Extensions panel includes a direct Chrome Web Store link. This provides Web Store discovery, while installation still requires an unpacked extension directory. Full one-click arbitrary Web Store installation is not an Electron capability; implementing that would require a custom Chromium integration or using the Chrome browser itself.
 
+## CEF Chrome-runtime migration
+
+The repository now includes a native CEF Chrome-runtime track under `cef/`. This is the lightweight custom-Chromium direction for stronger extension support. It is intentionally separate from the Electron release path until the CEF SDK is downloaded and validated on the Windows runner. See [`cef/ARCHITECTURE.md`](cef/ARCHITECTURE.md).
+
 ## Current app
 
 The Electron track includes multiple tabs, address/search navigation, back/forward/reload, downloads to the Windows Downloads folder, persistent Chromium session data, and an Extensions panel. The earlier PySide6/QtWebEngine prototype remains in the repository as a reference for the Qt implementation and data layer.
